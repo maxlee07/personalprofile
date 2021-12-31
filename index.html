@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        /*nav bar*/
+        .nav{
+            display: flex;
+            justify-content: flex-start;
+            background-color: black;
+            position: fixed;
+            width: 100%;
+            height: auto;
+        }
+        nav a{
+             text-decoration: none;
+             color: blanchedalmond;
+             display: block;
+       }
+       nav ul{
+              display: flex;
+             flex-direction: row;
+             justify-content: space-around;
+             }
+       nav a:hover{
+            color: cyan;
+             }
+        nav li {
+            padding: 5px;
+            font-size: larger;
+            font-weight: bold;
+            margin-left: 3rem;
+            margin-top: 1vh;
+            margin-right: 2em;
+            list-style: none;
+        }
+        @media (max-width:500px){
+            .nav{
+                justify-content: center;
+            }
+
+            .nav li{
+                margin: 0 1rem;
+            }
+        }
+        /*Home*/
+        .home{
+            background-color: #D9AFD9;
+            background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+            width: 100%;
+            height: 100vh;
+        }
+        @media(max-width:500px){
+          .home{
+            background-color: white;
+            background-image: none;
+          }
+        }
+        .pic{
+           display: block;
+            margin: auto;
+             margin-top: 70%;
+           border-radius: 56%;
+            border: 5px black solid;
+            }
+         a{
+            margin:0 auto;
+           display:table;
+          }
+         #name{
+          text-align: center;
+          font-size: x-large;
+          font-style: italic;
+          color: black;
+          margin-top: 1vh;
+          }
+         #quote{
+            text-align: center;
+             font-size: x-large;
+            font-style: italic;
+             color:black;
+             margin-top: 1vh;
+           }
+           @media (max-width: 500px){
+               .pic{
+                   margin-top: 80%;
+               }
+           }
+           /*type*/
+           .type1{
+               overflow: hidden;
+               border-right: .15em solid black;
+               white-space: nowrap;
+               margin: 0 auto;
+               letter-spacing: .15em;
+               animation: 
+               typing 3.5s steps(40, end),
+               blink-caret .75s step-end infinite;
+           }
+           
+           @keyframes typing {
+             from { width: 0 }
+              to { width: 100% }
+             }
+             @keyframes blink-caret {
+               from, to { border-color: transparent }
+              50% { border-color: none; }
+              }
+              .type2{
+            overflow: hidden;
+               border-right: .15em solid black;
+               white-space: wrap;
+               margin: 0 auto;
+               animation: fadeIn 5s;    
+           }
+           @keyframes fadeIn {
+            0% {opacity:0;}
+            100% {opacity:1;}
+             }
+             /*typing*/
+             #About{
+                 width: 100%;
+                 height: 20vh;
+             }
+.intro{
+  display: flex;
+  margin-top: 14vh;
+  justify-content: center;
+  color: black ;
+  font-size: xx-large;
+}
+@media (max-width: 500px){
+    .intro{
+        font-size: 14px;
+    }
+}
+.typing{
+  position: relative;
+  margin-left: 10px;
+}
+.typing::after{
+  content: " ";
+  position: absolute;
+  width: 1px;
+  height: 5%;
+  right: -5px;
+  
+  animation: blink 0.5s infinite ease;
+}
+@keyframes blink {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+  
+}
+/*ICONS*/
+.icon{
+  display: flex;
+  justify-content: center;
+}
+.fab{
+  color: black;
+  font-size: 50px;
+  margin-left: 50px;
+  margin-bottom: 20vh;
+}
+@media(max-width: 500px){
+    .icon{
+        flex-direction:column ;
+        text-align: center;
+        margin-right: 30px;
+   }
+    .fab{
+        font-size: xx-large;
+        margin-bottom: 5vh;
+        
+    }
+}
+.mail{
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+    </style>
+</head>
+<body>
+ <header>
+     <div class="nav">
+         <nav>
+             <ul>
+                 <li><a href="#">Home</a></li>
+                 <li><a href="#About">About</a></li>
+                 <li><a href="#contact">Contact</a></li>
+             </ul>
+         </nav>
+     </div>
+ </header>
+ <!--Home page-->
+ <div class="home">
+    <div id="main">
+        <div id="profile-pic">
+          <a class="pic-link"href="https://www.facebook.com/profile.php?id=100011172425276" target="blank"><img class="pic" src=https://scontent.fccu17-1.fna.fbcdn.net/v/t1.6435-1/p240x240/93233777_1077622419286829_8520362422521823232_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=7206a8&_nc_ohc=QWPiIdd3Pd4AX_7Sd3b&_nc_ht=scontent.fccu17-1.fna&oh=00_AT98Q5vQDdkF6T11XlbW74JKWS6LKrryZErJAZctJO7f4w&oe=61E26B04></a>
+        </div>
+        <div class="type1" id="name">
+          <p>My Name is Bishal Majumdar</p>
+        </div>
+        <div class="type2" id="quote">
+          <p>[“Folks are usually about as happy as they make their minds up to be.”
+           ― Abraham Lincoln]</p>
+        </div>
+ </div>
+ </div>
+  <!--typing effect-->
+  <div>
+    <div class="intro"  id="About">
+        <h1>I am a</h1>
+        <h1 class="typing">hi</h1>
+       </div>
+       <script src="app.js"></script>
+   </div>
+       <div class="icon" id="contact">
+         <a href="https://www.facebook.com/profile.php?id=100011172425276" target="blank"><i class="fab fa-facebook-square"></i></a>
+         <a href="https://github.com/maxlee07" target="blank"><i class="fab fa-github"></i></a>
+         <a href="https://www.linkedin.com/in/bishal-majumdar-b0097a1a5/" target="blank"><i class="fab fa-linkedin"></i></a>
+         <a href="https://www.freecodecamp.org/learn" target="blank"><i class="fab fa-free-code-camp"></i></a>
+</div>   
+<span class="mail" id="contact">Mail:<b>gosbi73@gmail.com</b></span>
+</body>
+</html>
